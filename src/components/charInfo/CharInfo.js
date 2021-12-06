@@ -7,13 +7,13 @@ import Sceleton from '../skeleton/Skeleton'
 
 import './charInfo.scss';
 
-
 class CharInfo extends Component{
     state = {
         char: null,
         loading: false,
         error: false
     }
+
 
     componentDidMount() {
         this.updateChar();
@@ -61,7 +61,6 @@ class CharInfo extends Component{
             error: true
         })
     }
-
 
     render() {
         const {char, loading, error} = this.state;
